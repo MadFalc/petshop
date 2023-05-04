@@ -16,6 +16,10 @@ use App\Http\Controllers\MainController;
 */
 
 
-Route::get('/', [MainController::class, 'index']);
-Route::get('/home', [MainController::class, 'index']);
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Route::get('/', [MainController::class, 'index']);
+// Route::get('/home', [MainController::class, 'index']);
 
